@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>犬と猫の分類</title>
+    <link rel="stylesheet" href="./static/stylesheet.css">
+</head>
+<body>
+	<h1>犬と猫の分類</h1>
+	<p>以下のフォームから画像をアップロードしてください。</p>
+	<form method="post"  enctype="multipart/form-data">
+		<label for="file_upload">画像ファイル:</label>
+		<input type="file" name="file" id="file_upload"><br><br>
+		<input type="submit" value="分類開始">
+		<div>{{answer}}</div>
+		<div>{{probability}}</div>
+	</form>
+</body>
+</html>
